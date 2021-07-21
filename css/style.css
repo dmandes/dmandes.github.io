@@ -1,0 +1,343 @@
+
+/******************************************
+/* SETUP
+/******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+@font-face {
+    font-family: 'newyorkregular';
+    src: url('../fonts/newyork.woff2') format('woff2'),
+         url('../fonts/newyork.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clearboth {
+	clear: both;
+}
+
+.clear {
+     overflow: auto;
+}
+/* Alignments */
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+/******************************************
+/* BASE STYLES
+/******************************************/
+
+body {
+     color: #434343;
+     font-size: 14px;
+     line-height: 1.4;
+     font-family:   'Montserrat', Helvetica, Arial, sans-serif;
+     font-weight: 300;
+     margin: 0;
+     width: 100%;
+     padding-top: 81px;
+     background-color: #f9f9f9;
+}
+.hide-scroll::-webkit-scrollbar {
+     opacity: 0;
+     scrollbar-width: none; /* Firefox */
+     -ms-overflow-style: none; /* IE 10+ */
+}
+h1,h2,h3,h4,h5,h6 {
+     font-family:  'newyorkregular', Helvetica, Arial, sans-serif;
+     text-transform: uppercase;
+     font-weight: 300;
+     margin-top: 43px;
+     margin-bottom: 14px;
+     line-height: 1.2;
+}
+h2 {
+     letter-spacing: 0.25rem;
+     margin-top: 0px;
+}
+h5 {
+     font-size: 28px;
+     letter-spacing: 0.05rem;
+     text-transform: none;
+}
+p {
+     margin-bottom: 14px;
+}
+a {
+     color: #434343;
+}
+a:hover {
+     color: #8b8b8b;
+}
+img {
+     border-image-width:0px;
+     width: 100%;
+     margin: 0;
+}
+nav {
+     background-color: #FDFDFD;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 9001;
+     letter-spacing: 0.5px;
+     height: 100vh;
+     padding-top: 40vh;
+     padding-bottom: 55vh;
+    box-shadow:
+     0 0.1px 0.3px rgba(0, 0, 0, 0.014),
+     0 0.3px 0.9px rgba(0, 0, 0, 0.02),
+     0 0.6px 2.1px rgba(0, 0, 0, 0.026),
+     0 2px 7px rgba(0, 0, 0, 0.04);
+}
+
+.main-container {
+     margin-bottom: 75px;
+}
+.main-container img {
+     opacity: 1;
+     cursor: pointer;
+     margin-bottom: 10px;
+}
+.text-container {
+     position: relative;
+     width: 100%;
+     padding:0 15px 0 15px;
+     margin: 0 auto;
+     box-sizing: border-box;
+     margin-bottom: 96px;
+
+}
+.nav-wrapper {
+     text-align: center;
+     position: relative;
+     width: 100%;
+     max-width: 960px;
+     margin: 0 auto;
+}
+.logo-wrapper {
+     margin: 0 auto;
+}
+.logo-back {
+     margin: 0 auto;
+     display: inline-block;
+     cursor: pointer;
+     font-size: 2.5rem;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     text-align: center;
+}
+.logo-char {
+     opacity: 0;
+}
+
+.about-link {
+     text-decoration: underline;
+     margin-bottom:  0;
+     font-weight: 300;
+     cursor: pointer;
+}
+.about-svg {
+     stroke-dasharray: 13000;
+     stroke-dashoffset: 13000;
+}
+.project-title {
+     margin-top: 64px;
+}
+video {
+     width: 100%;
+}
+.about {
+     height: 0;
+}
+.sps {
+     opacity: 0;
+     height: 0px;
+}
+.ab {
+     opacity: 0;
+     height: 0px;
+}
+.de {
+     opacity: 0;
+     height: 0px;
+}
+.pw {
+     opacity: 0;
+     height: 0px;
+}
+.sps-text, .ab-text, .de-text, .pw-text ,  .about-text{
+     opacity: 0;
+     display: none;
+}
+.text-padding {
+     padding-left: 15px;
+     padding-right: 15px;
+}
+.sps  .reveal  .progress {
+     background-color: white;
+     color: #6DABE4;
+}
+.ab  .reveal  .progress {
+     background-color: white;
+     color: #F68B3D;
+}
+.de  .reveal  .progress {
+     background-color: white;
+     color: #8B9BD8;
+}
+.about svg {
+     position: absolute;
+     display: none;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+.about-img {
+     display: none;
+     opacity: 0;
+}
+.footer-nav {
+     margin: 0 auto;
+     max-width: 960px;
+     margin-bottom: 60px;
+     font-weight: 600;
+}
+.prev-project {
+
+     cursor: pointer;
+     float: left;
+     padding-left: 15px;
+}
+.next-project {
+     cursor: pointer;
+     float: right;
+     padding-right: 15px;
+}
+.prev-project:hover {
+     color: #8b8b8b;
+}
+.next-project:hover {
+     color: #8b8b8b;
+}
+.footer {
+     height: 130px;
+     text-align: center;
+     margin-bottom: 0px;
+}
+.footer-text {
+     position: relative;
+     padding-bottom: : 50px;
+}
+.footer-text a {
+     letter-spacing: 0.5px;
+}
+.project-headline {
+     margin-top: 23px;
+}
+
+
+
+/******************************************
+/* MOBILE LAYOUT
+/******************************************/
+@media (min-width: 340px) {
+     body {
+          font-size: 16px;
+     }
+     .logo-back {
+          font-size: 3rem;
+          padding-top: 19px;
+          padding-bottom: 19px;
+     }
+}
+
+/******************************************
+/* Larger than mobile */
+/******************************************/
+@media (min-width: 400px) {
+     .logo-back {
+          font-size: 3.5rem;
+          padding-top: 14px;
+          padding-bottom: 14px;
+     }
+}
+
+/******************************************
+/* Larger than phablet */
+/******************************************/
+@media (min-width: 550px) {
+
+}
+
+/******************************************
+/* Larger than tablet */
+/******************************************/
+@media (min-width: 750px) {
+     .reveal-wrapper, .about {
+          position: relative;
+          width: 100%;
+          max-width: 960px;
+          margin: 0 auto;
+          box-sizing: border-box;
+     }
+     .main-container {
+          position: relative;
+          width: 100%;
+          max-width: 960px;
+          margin: 0 auto;
+          box-sizing: border-box;
+          margin-bottom: 75px;
+     }
+     .logo-back {
+          font-size: 4rem;
+          padding-top: 11px;
+          padding-bottom: 11px;
+     }
+}
+
+/******************************************
+/* Larger than desktop */
+/******************************************/
+@media (min-width: 1000px) {
+     .text-container{
+          padding:0;
+          position: relative;
+          width: 100%;
+          max-width: 960px;
+          margin: 0 auto;
+          box-sizing: border-box;
+          margin-bottom: 75px;
+     }
+     .footer {
+          margin-bottom: 0px;
+     }
+}
+
+/******************************************
+/* Larger than Desktop HD */
+/******************************************/
+@media (min-width: 1200px) {
+
+}
