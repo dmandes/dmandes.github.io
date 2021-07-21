@@ -140,6 +140,7 @@ function slideShowConfig(width, height){
 				embedded: true,
 				center: false,
 				help: true,
+				overview: false,
 				keyboardCondition: 'focused'
 			};
 	return obj;
