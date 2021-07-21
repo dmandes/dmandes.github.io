@@ -317,7 +317,7 @@ $('.next-project, .prev-project').on('click', function(e){
 });
 window.addEventListener('resize', function(){
   	var currentWidth = parseInt($('.reveal-wrapper').css('width'));
-  	var height = aMath.round(currentWidth / fourthree);
+  	var height = Math.round(currentWidth / fourthree);
   	$('.' + currentTarget).css('height', height+"px");
   	$('.' + currentTarget + ' ' + '.reveal-wrapper').css('height', height + "px");
   	slideShowLayoutRefresh();
