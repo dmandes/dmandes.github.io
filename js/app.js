@@ -34,7 +34,7 @@ var logoChars = $('.logo-back').children();
 // slide show objects
 //
 var gotv = new Reveal(document.querySelector('.sps-gotv'), slideShowConfig(currentWidth, height));
-var spsStationary = new Reveal(document.querySelector('.sps-stationary'), slideShowConfig(currentWidth, height));
+var spsStationery = new Reveal(document.querySelector('.sps-stationery'), slideShowConfig(currentWidth, height));
 var spsEvents = new Reveal(document.querySelector('.sps-events'), slideShowConfig(currentWidth, height));
 var cWalk = new Reveal(document.querySelector('.cwalk'), slideShowConfig(currentWidth, height));
 var idealist = new Reveal(document.querySelector('.idealist'), slideShowConfig(currentWidth, height));
@@ -42,7 +42,7 @@ var alpBrochure = new Reveal(document.querySelector('.alp-brochure'), slideShowC
 var annualReport = new Reveal(document.querySelector('.annual-report'), slideShowConfig(currentWidth, height));
 var spsFlyers = new Reveal(document.querySelector('.sps-flyers'), slideShowConfig(currentWidth, height));
 var abMarketing = new Reveal(document.querySelector('.ab-marketing'), slideShowConfig(currentWidth, height));
-var abStationary = new Reveal(document.querySelector('.ab-stationary'), slideShowConfig(currentWidth, height));
+var abStationery = new Reveal(document.querySelector('.ab-stationery'), slideShowConfig(currentWidth, height));
 var abScreens = new Reveal(document.querySelector('.ab-tv-screens'), slideShowConfig(currentWidth, height));
 var deMedia = new Reveal(document.querySelector('.de-media'), slideShowConfig(currentWidth, height));
 var rIsland = new Reveal(document.querySelector('.r-island'), slideShowConfig(currentWidth, height));
@@ -92,7 +92,7 @@ function mainSelectionShow(){
 };
 function slideShowLayoutRefresh(){
 	gotv.layout();
-	spsStationary.layout();
+	spsStationery.layout();
 	spsEvents.layout();
 	cWalk.layout();
 	idealist.layout();
@@ -100,7 +100,7 @@ function slideShowLayoutRefresh(){
 	annualReport.layout();
 	spsFlyers.layout();
 	abMarketing.layout();
-	abStationary.layout();
+	abStationery.layout();
 	deMedia.layout();
 	rIsland.layout();
 	typeSpa.layout();
@@ -256,7 +256,7 @@ window.onpopstate = function(event) {
 // Initialization of each slide show
 //
 gotv.initialize();
-spsStationary.initialize();
+spsStationery.initialize();
 spsEvents.initialize();
 cWalk.initialize();
 idealist.initialize();
@@ -264,7 +264,7 @@ alpBrochure.initialize();
 annualReport.initialize();
 spsFlyers.initialize();
 abMarketing.initialize();
-abStationary.initialize();
+abStationery.initialize();
 deMedia.initialize();
 rIsland.initialize();
 typeSpa.initialize();
